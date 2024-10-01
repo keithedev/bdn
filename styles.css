@@ -1,0 +1,188 @@
+:root {
+    --main-color: #ff5f17;
+    --secondary-color: #F1F1F1;
+}
+
+body {
+    margin: 0 0 0 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+}
+
+.contenedor-navbar {
+    top: 0;
+    z-index: 10;
+    display: flex;
+    position: sticky;
+    padding: 15px 5%;
+    background-color: var(--main-color);
+}
+
+.logo {
+    height: 60px;
+}
+
+.botones {
+    list-style-type: none;
+    padding: 0;
+    margin: auto 0 auto auto;
+}
+
+.boton-navbar {
+    display: inline;
+    margin: auto 20px;
+}
+
+.nav-link {
+    color: #000;
+    text-decoration: none;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    border: 5px;
+    height: min-content;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.nav-link:visited {
+    color: #000;
+}
+
+/* .contenido {
+    padding: 0 5% 0 5%;
+} */
+
+.contenedor-titulo {
+    height: 120px;
+    background-image: url("./img/moto-2.jpg");
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: center;
+}
+
+.titulos-1 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.contenido-seccion {
+    padding: 5%;
+}
+
+.contenido-nosotros {
+    padding: 0 5% 0 5%;
+}
+
+.parrafo {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    line-height: 1.6em;
+}
+ 
+#nosotros > .contenido-seccion {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenido-nosotros > .parrafo {
+    text-align: justify;
+    align-content: center;
+    width: 35%;
+    padding: 5%;
+}
+
+.contenido-nosotros > img {
+    width: 45%;
+    padding: 5%;
+    object-fit: contain;
+}
+
+.contenido-servicio {
+    background-color: #ff5f17;
+}
+
+.contenido-servicio > p {
+    margin: 0;
+    text-align: center;
+    font-size: 1.6em;
+    line-height: 1.8em;
+    padding: 0px 5%;
+    margin-bottom: 5%;
+}
+
+.mural-productos {
+    height: 42em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img-mural {
+    transition: transform 1s;
+    height: 20em;
+    width: 20em;
+    object-fit: contain;
+}
+
+.img-mural.grande {
+    height: 42em;
+    width: 42em;
+}
+
+.img-mural:hover {
+    transform: scale(1.1);
+}
+
+/* Media query para cambios de dispositivos moviles. */
+@media (max-width: 700px) {
+
+
+    .contenido-nosotros {
+        padding: 5% 5% 0 5%;
+    }
+
+    #nosotros > .contenido-seccion {
+        display: flex;
+        flex-wrap:nowrap;
+        flex-direction: column;
+    }
+    .contenido-nosotros > .parrafo {
+        text-align: center;
+        width: 100%;
+        padding: 5% 0;
+        margin: 0;
+    }
+    
+    .contenido-nosotros > img {
+        align-self: center;
+        width: 80%;
+        padding: 0;
+    }
+
+    .contenido-nosotros > .parrafo:last-of-type {
+        order: 2;
+    }
+
+    .contenido-nosotros img:last-child {
+        order: 1; /* Cambia el orden de la última imagen */
+    }
+}
+
+.contenedor-mapa {
+    display: flex;
+    justify-content: center;
+}
+
+.mapa {
+    width: 80%;
+    height: 480px;
+}
