@@ -55,15 +55,29 @@ body {
     padding: 0 5% 0 5%;
 } */
 
+
+
 .contenedor-titulo {
     height: 120px;
-    background-image: url("./img/moto-2.jpg");
+    
     background-color: rgba(255,255,255,0.6);
     background-blend-mode: lighten;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     align-content: center;
+}
+
+#nosotros > .contenedor-titulo {
+    background-image: url("./img/moto-2.jpg");
+}
+
+#marcas > .contenedor-titulo {
+    background-image: url("./img/bici.jpg");
+}
+
+#sucursales > .contenedor-titulo {
+    background-image: url("./img/moto-4.jpeg");
 }
 
 .titulos-1 {
@@ -115,27 +129,22 @@ body {
     font-size: 1.6em;
     line-height: 1.8em;
     padding: 0px 5%;
-    margin-bottom: 5%;
+    margin-bottom: 2.5%;
 }
 
 .mural-productos {
-    height: 42em;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    width: 100%;
+    /* align-content: center; */
+    justify-content: center;
 }
 
 .img-mural {
     transition: transform 1s;
-    height: 20em;
-    width: 20em;
+    width: 21%;
     object-fit: contain;
-}
-
-.img-mural.grande {
-    height: 42em;
-    width: 42em;
+    padding: 1%
 }
 
 .img-mural:hover {
