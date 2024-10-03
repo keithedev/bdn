@@ -110,7 +110,7 @@ body {
 .contenido-nosotros > .parrafo {
     text-align: justify;
     align-content: center;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     width: 35%;
     padding: 5%;
 }
@@ -128,7 +128,7 @@ body {
 .contenido-servicio > p {
     margin: 0;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.7vw;
     line-height: 1.8em;
     padding: 0px 5%;
     margin-bottom: 2.5%;
@@ -240,7 +240,7 @@ footer {
 .contacto > p {
     font-weight: bold;
     margin: 0;
-    font-size: 2vw;
+    font-size: 1.2vw;
 }
 
 .link {
@@ -252,7 +252,7 @@ footer {
 
 .link > p {
     margin: 0 0 0 10px;
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 
 /* Media query para cambios de dispositivos moviles. */
