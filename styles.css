@@ -59,15 +59,8 @@ body {
     color: #000;
 }
 
-/* .contenido {
-    padding: 0 5% 0 5%;
-} */
-
-
-
 .contenedor-titulo {
     height: 120px;
-    
     background-color: rgba(255,255,255,0.6);
     background-blend-mode: lighten;
     background-size: cover;
@@ -144,7 +137,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    /* align-content: center; */
     justify-content: center;
 }
 
@@ -157,6 +149,18 @@ body {
 
 .img-mural:hover {
     transform: scale(1.1);
+}
+
+.contenido-marcas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 2.5% 0;
+}
+
+.contenido-marcas > img {
+    width: 25%;
 }
 
 .contenido-sucursales {
@@ -247,15 +251,6 @@ footer {
 .link > p {
     margin: 0 0 0 10px;
 }
-
-/* .nav-link {
-    color: #000;
-    text-decoration: none;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
-    border: 5px;
-    height: min-content;
-} */
 
 /* Media query para cambios de dispositivos moviles. */
 @media (max-width: 700px) {
