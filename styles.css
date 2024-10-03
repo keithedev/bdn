@@ -293,4 +293,12 @@ footer {
     .sucursal {
         width: 30%;
     }
+
+    .mapa {
+        height: 240px;
+    }
+    
+    .contenido-marcas > img {
+        width: 50%;
+    }
 }
