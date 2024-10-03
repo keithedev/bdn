@@ -16,12 +16,20 @@ body {
     position: sticky;
     padding: 15px 5%;
     background-color: var(--main-color);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .logo {
     height: 60px;
 }
 
+.logo-c {
+    height: 20px;
+}
+
+.logo-g {
+    height: 100px;
+}
 .botones {
     list-style-type: none;
     padding: 0;
@@ -37,7 +45,7 @@ body {
     color: #000;
     text-decoration: none;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.3em;
     border: 5px;
     height: min-content;
 }
@@ -151,9 +159,106 @@ body {
     transform: scale(1.1);
 }
 
+.contenido-sucursales {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.contenedor-sucursales {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.parrafo-info {
+    width: 100%;
+    font-weight: bold;
+    font-size: larger;
+    margin-top: 0;
+}
+
+.parrafo-info.derecha {
+    text-align: end;
+}
+
+.barra-separador {
+    width: 100%;
+    height: 1px;
+    background-color: #FFF;
+}
+
+.sucursal {
+    width: 18%;
+    background-color: #000;
+    padding: 5px 30px;
+    margin: 1% 0;
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.sucursal > h3 {
+    color: var(--main-color);
+    text-align: center;
+}
+
+.sucursal > p {
+    color: #FFF;
+}
+
+.contenedor-mapa {
+    display: flex;
+    justify-content: center;
+}
+
+.mapa {
+    width: 80%;
+    height: 480px;
+}
+
+footer {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin: 0 2.5%;
+    padding: 2% 2.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid 5px #ff5f17;
+}
+
+.contacto {  
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.contacto > p {
+    font-weight: bold;
+    margin: 0;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+}
+
+.link > p {
+    margin: 0 0 0 10px;
+}
+
+/* .nav-link {
+    color: #000;
+    text-decoration: none;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    border: 5px;
+    height: min-content;
+} */
+
 /* Media query para cambios de dispositivos moviles. */
 @media (max-width: 700px) {
-
 
     .contenido-nosotros {
         padding: 5% 5% 0 5%;
@@ -184,14 +289,13 @@ body {
     .contenido-nosotros img:last-child {
         order: 1; /* Cambia el orden de la última imagen */
     }
-}
 
-.contenedor-mapa {
-    display: flex;
-    justify-content: center;
-}
+    .img-mural {
+        width: 40%;
+        padding: 2%;
+    }
 
-.mapa {
-    width: 80%;
-    height: 480px;
+    .sucursal {
+        width: 30%;
+    }
 }
