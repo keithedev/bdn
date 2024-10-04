@@ -21,6 +21,7 @@ body {
 
 .logo {
     height: 60px;
+    object-fit: contain;
 }
 
 .logo-c {
@@ -29,7 +30,9 @@ body {
 
 .logo-g {
     height: 100px;
+    object-fit: contain;
 }
+
 .botones {
     list-style-type: none;
     padding: 0;
@@ -179,7 +182,7 @@ body {
 .parrafo-info {
     width: 100%;
     font-weight: bold;
-    font-size: larger;
+    font-size: 1.8vw;
     margin-top: 0;
 }
 
@@ -234,7 +237,7 @@ footer {
     display: flex;
     flex-direction: column;
     height: 100px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .contacto > p {
@@ -258,6 +261,24 @@ footer {
 /* Media query para cambios de dispositivos moviles. */
 @media (max-width: 700px) {
 
+    .contenedor-navbar {
+        flex-direction: column;
+    }
+
+    .botones {
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .boton-navbar {
+        margin: auto 5px;
+    }
+
+    .nav-link {
+        font-size: 5vw;
+    }
+
     .contenido-nosotros {
         padding: 5% 5% 0 5%;
     }
@@ -270,13 +291,13 @@ footer {
     .contenido-nosotros > .parrafo {
         text-align: center;
         width: 100%;
-        font-size: 3vw;
+        font-size: 4vw;
         padding: 5% 0;
         margin: 0;
     }
     
     .contenido-servicio > p {
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     .contenido-nosotros > img {
@@ -315,6 +336,14 @@ footer {
     }
 
     .link > p {
+        font-size: 3vw;
+    }
+
+    .logo-g {
+        height: 70px;
+    }
+
+    .parrafo-info {
         font-size: 3vw;
     }
 }
