@@ -1,5 +1,5 @@
 :root {
-    --main-color: #ff5f17;
+    --main-color: #ff6400;
     --secondary-color: #F1F1F1;
 }
 
@@ -15,7 +15,7 @@ body {
     display: flex;
     position: sticky;
     padding: 15px 5%;
-    background-color: var(--main-color);
+    background-color: var(--secondary-color);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
@@ -126,6 +126,7 @@ body {
 
 .contenido-servicio {
     background-color: #ff5f17;
+    /* clip-path: ellipse(100% 55% at 48% 44%); */
 }
 
 .contenido-servicio > p {
@@ -135,24 +136,6 @@ body {
     line-height: 1.8em;
     padding: 0px 5%;
     margin-bottom: 2.5%;
-}
-
-.mural-productos {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-}
-
-.img-mural {
-    transition: transform 1s;
-    width: 21%;
-    object-fit: contain;
-    padding: 1%
-}
-
-.img-mural:hover {
-    transform: scale(1.1);
 }
 
 .contenido-marcas {
@@ -314,11 +297,6 @@ footer {
         order: 1; /* Cambia el orden de la última imagen */
     }
 
-    .img-mural {
-        width: 40%;
-        padding: 2%;
-    }
-
     .sucursal {
         width: 30%;
     }
@@ -346,4 +324,35 @@ footer {
     .parrafo-info {
         font-size: 3vw;
     }
+}
+
+.galeria {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.lateral {
+    width: 23%;
+    display: flex;
+    flex-flow: column;
+}
+
+.central {
+    width: 46%;
+    display: flex;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.img-galeria {
+    width: 100%;
+    padding: 2%;
+    transition: transform 1s;
+}
+
+
+.img-galeria:hover {
+    transform: scale(1.1);
 }
