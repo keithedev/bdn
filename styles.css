@@ -162,8 +162,6 @@ body {
     height: 100vh;
     overflow: hidden;
     margin-top: -90px;
-    display: flex;
-    
 }
 
 .videoWrapper iframe{
